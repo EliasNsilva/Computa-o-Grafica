@@ -36,24 +36,25 @@ void display(){
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
-    // sol
+
+    // SOL
     glTranslatef(0.0f, 0.0f, -100.0f);
     glColor3f(255, 255, 0);//malero
-    glutSolidSphere(20.0f, 15, 15);
+    glutSolidSphere(20.0f, 40, 40);
 
-    //planeta vermelho
+    //MARTE
     glPushMatrix();
         glRotatef(anguloPlanet, 0.0f, 1.0f, 0.0f);
         glTranslatef(90.0f, 0.0f, 0.0f);
         glColor3f(1, 0, 0);
-        glutSolidSphere(6.0f, 15, 15);
+        glutSolidSphere(6.0f, 30, 30);
     glPopMatrix();
 
-    // planeta verde
+    // TERRA
     glRotatef(-anguloPlanet, 0.0f, 1.0f, 0.0f);
     glTranslatef(-70.0f, 0.0f, 0.0f);
     glColor3f(0, 1, 0);
-    glutSolidSphere(6.0f, 15, 15);
+    glutSolidSphere(6.0f, 30, 30);
 
     // lua azul
     glPushMatrix();
@@ -64,7 +65,7 @@ void display(){
         glutSolidSphere(2.8f, 15, 15);
     glPopMatrix();
 
-    //lua 2
+    //lua azualada
     glPushMatrix();
         glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
         glRotatef(anguloLua, 0.0f, 1.0f, 0.0f);
