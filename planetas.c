@@ -87,14 +87,14 @@ int main(int argc, char** argv)
     
     glutDisplayFunc(display);
 
-	glMatrixMode(GL_PROJECTION);
+    glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
 
     fovy = 100.0f; 
     gluPerspective(fovy, 1.0f * WINDOW_WIDTH / WINDOW_HEIGHT, 0.5f, 500.0f);
 	
-	glutKeyboardFunc(GerenciaTeclado);
-	glEnable(GL_DEPTH_TEST);
+    glutKeyboardFunc(GerenciaTeclado);
+    glEnable(GL_DEPTH_TEST);
 
     glutMainLoop();
     
